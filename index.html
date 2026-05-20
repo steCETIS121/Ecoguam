@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EcoGuam</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles_index.css">  
+    </head>
+
+    <body>
+        <!-- MENU-->
+        <header>
+            <div class="logo_area">
+                <img src="logo.png" alt="Logo de Ecoguam" id="image_logo">
+            </div>
+
+            <button id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#Inicio" class="quicksand"> INICIO</a></li>
+                    <li><a href="#nosotros" class="quicksand"> NOSOTROS</a></li>
+                    <li><a href="#contacto" class="quicksand"> CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- CONTENIDO-->
+        <div class="contenido">
+            <section id="Inicio">
+
+                <section  id="pantalla">
+                    <h1 id="slogan" class="quicksand">MODA LIMPIA, <br> PLANETA VIVO</h1>
+                </section>
+                <div>
+                    <div id="mision">
+                        <img src="../img/svg/mision_icon.svg" alt="Icono de misión">
+                        <h2 class="quicksand">MISIÓN</h2>
+                        <h6> Impulsar un modelo de curtido ecológico con guamúchil y otros recursos naturales, reduciendo el uso de químicos tóxicos y promoviendo prácticas sostenibles que fortalezcan la economía circular, la resiliencia ambiental y el bienestar de las comunidades de la Ciénega de Chapala. </h6>
+                    </div>
+                    
+                    <div id="vision">
+                        <img src="../img/svg/vision_icon.svg" alt="Icono de visión">
+                        <h2 class="quicksand">VISIÓN</h2>
+                        <h6> Ser referente nacional e internacional en innovación verde para la industria del cuero, posicionando a ECOGUAM como un proyecto que transforma residuos en recursos, protege los ecosistemas y genera desarrollo sostenible con identidad regional y proyección global. </h6>
+                    </div>
+
+                    <div id="valores">
+                        <img src="../img/svg/valores_icon.svg" alt="Icono de valores">
+                        <h2 class="quicksand">VALORES</h2>
+                        <div id="sostenibilidad">
+                            <img src="../img/svg/sustainability_icon.svg" id="img_sost">
+                            <h5>Sostenibilidad</h5>
+                            <h6>Compromiso con procesos que respetan la naturaleza y reducen la contaminación.</h6>
+                        </div>
+                        <div id="innovacion">
+                            <img src="../img/svg/innovarion_icon.svg" id="img_inov">
+                            <h5>Innovación</h5>
+                            <h6>Desarrollo de soluciones creativas basadas en ciencia y tradición local.</h6>
+                        </div>
+                        <div id="responsabilidad">
+                            <img src="../img/svg/responsabilitySocial.svg" id="img_resp">
+                            <h5>Responsabilidad Social</h5>
+                            <h6>Integración de comunidades rurales en cadenas productivas justas.</h6>
+                        </div>
+                        <div id="identidad">
+                            <img src="../img/svg/identity_icon.svg" id="img_ident">
+                            <h5>Identidad regional</h5>
+                            <h6>Orgullo por las raíces culturales y ecológicas de la Ciénega de Chapala.</h6>
+                        </div>
+                        <div id="transparencia">
+                            <img src="../img/svg/transparence_icon.svg" id="img_trans">
+                            <h5>Transparencia</h5>
+                            <h6>Procesos claros y confiables en cada etapa de producción.</h6>
+                        </div>
+                        <div id="colaboracion">
+                            <img src="../img/svg/colaboration_icon.svg" id="img_cola">
+                            <h5>Colaboración</h5>
+                            <h6>Trabajo conjunto entre academia, industria y sociedad para lograr impacto positivo.</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="nosotros">
+                <h2 class="quicksand">¿QUIENES SOMOS?</h2>
+                <h6>Somos una marca de ropa sostenible comprometida con la protección del medio ambiente en Guam. Nos esforzamos por crear prendas de alta calidad utilizando materiales reciclados y procesos de producción ecoamigables. Nuestro objetivo es inspirar a las personas a adoptar un estilo de vida más sostenible y contribuir a la conservación de nuestro planeta.</h6>
+            </section>
+
+            
+        </div>
+        <!-- FIN CONTENIDO-->
+        
+        <!-- PIE DE PAGINA-->
+         <footer>
+            <section id="contacto">
+                <h5>CONTÁCTANOS</h5>
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="https://www.facebook.com/profile.php?id=61589362724110&sk=directory_links" target="_blank"><img src="../img/svg/facebook_icon.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ecoguam/" target="_blank"><img src="../img/svg/instagram_icon.svg" alt="Instagram"></a>
+                <p> ecoguam para la protección del medio ambiente</p>
+            </section>
+            
+        </footer>
+        <!-- Script para el menú hamburguesa -->
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.classList.toggle('abierto');
+            }
+        </script>
+    </body>
+</html>
+<!-- Facebook Icon by Terence Eden on <a href="https://icon-icons.com/authors/816-terence-eden">Icon-Icons.com</a>
+         Instagram share story connection Icon by Jump Studio on <a href="https://icon-icons.com/authors/1130-jump-studio">Icon-Icons.com</a>
+         Whatsapp tile logo Icon by VectorLogoZone on <a href="https://icon-icons.com/authors/1032-vectorlogozone">Icon-Icons.com</a>-->
