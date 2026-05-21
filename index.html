@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>EcoGuam</title>
         <meta charset="UTF-8">
@@ -14,9 +14,13 @@
         <header>
             <div class="logo_area">
                 <img src="logo.png" alt="Logo de Ecoguam" id="image_logo">
+                <div class="brand_text">
+                    <span class="brand_name quicksand">ECOGUAM</span>
+                    <span class="brand_tagline">Curtido Ecológico Sostenible</span>
+                </div>
             </div>
 
-            <button id="hamburger" onclick="toggleMenu()">
+            <button id="hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -56,32 +60,32 @@
                         <h2 class="quicksand">VALORES</h2>
                         <div id="valores_grid"> 
                             <div id="sostenibilidad">
-                                <img src="../img/svg/sustainability_icon.svg" id="img_sost">
+                                <img src="../img/svg/sustainability_icon.svg" id="img_sost" alt="Icono de sostenibilidad">
                                 <h5>Sostenibilidad</h5>
                                 <h6>Compromiso con procesos que respetan la naturaleza y reducen la contaminación.</h6>
                             </div>
                             <div id="innovacion">
-                                <img src="../img/svg/innovation-icon.svg" id="img_inov">
+                                <img src="../img/svg/innovation-icon.svg" id="img_inov" alt="Icono de innovación">
                                 <h5>Innovación</h5>
                                 <h6>Desarrollo de soluciones creativas basadas en ciencia y tradición local.</h6>
                             </div>
                             <div id="responsabilidad">
-                                <img src="../img/svg/responsabilitySocial_icon.svg" id="img_resp">
+                                <img src="../img/svg/responsabilitySocial_icon.svg" id="img_resp" alt="Icono de responsabilidad social">
                                 <h5>Responsabilidad Social</h5>
                                 <h6>Integración de comunidades rurales en cadenas productivas justas.</h6>
                             </div>
                             <div id="identidad">
-                                <img src="../img/svg/identity_icon.svg" id="img_ident">
+                                <img src="../img/svg/identity_icon.svg" id="img_ident" alt="Icono de identidad regional">
                                 <h5>Identidad regional</h5>
                                 <h6>Orgullo por las raíces culturales y ecológicas de la Ciénega de Chapala.</h6>
                             </div>
                             <div id="transparencia">
-                                <img src="../img/svg/transparence_icon.svg" id="img_trans">
+                                <img src="../img/svg/transparence_icon.svg" id="img_trans" alt="Icono de transparencia">
                                 <h5>Transparencia</h5>
                                 <h6>Procesos claros y confiables en cada etapa de producción.</h6>
                             </div>
                             <div id="colaboracion">
-                                <img src="../img/svg/colaboration_icon.svg" id="img_cola">
+                                <img src="../img/svg/colaboration_icon.svg" id="img_cola" alt="Icono de colaboración">
                                 <h5>Colaboración</h5>
                                 <h6>Trabajo conjunto entre academia, industria y sociedad para lograr impacto positivo.</h6>
                             </div>
@@ -96,58 +100,76 @@
                     <h6>ECOGUAM impulsa el curtido ecológico de pieles con compuestos orgánicos del guamúchil, promoviendo innovación verde y desarrollo sostenible en la Región Ciénega de Chapala Michoacana..</h6>
                 </div>
 
-                <table id="comparativa_img">
-                    <tr>
-                        <th><h6>Otros</h6></th>
-                        <th><h6>Ecoguam</h6></th>
-                    </tr>
-                    <tr>
-                        <th><img src="img/competencia.jpeg"></th>
-                        <th><img src="img/ecoguam_curtido.jpeg"></th>
-                    </tr>
-                </table>
+                <div class="comparacion_seccion">
+                    <div class="comparacion_titulo">
+                        <h3 class="quicksand">¿Por qué elegir ECOGUAM?</h3>
+                        <p>Descubre la diferencia en cada aspecto</p>
+                    </div>
 
-                <div id="comparativa">
-                    <table>
-                        <tr>
-                            <th>Criterio</th>
-                            <th>Curtido tradicional</th>
-                            <th>Curtido con Ecoguam</th>
-                        </tr>
-                        <tr>
-                            <td>Flexibilidad</td>
-                            <td>⭐⭐⭐</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Resistencia a la tracción</td>
-                            <td>⭐⭐⭐⭐</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Color</td>
-                            <td>⭐⭐⭐</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Olor</td>
-                            <td>⭐</td>
-                            <td>⭐⭐⭐⭐⭐</td>
-                        </tr>
+                    <div class="comparacion_cards">
+                        <div class="comp_card comp_otros">
+                            <div class="comp_etiqueta">Curtido Tradicional</div>
+                            <img src="img/competencia.jpeg" alt="Cuero con curtido tradicional">
+                            <div class="comp_card_footer">
+                                <span class="comp_resultado comp_negativo">⚠ Uso de químicos tóxicos</span>
+                            </div>
+                        </div>
 
-                        <tr>
-                            <td>Impacto Ambiental</td>
-                            <td>⭐</td>
-                            <td>⭐⭐⭐⭐⭐</td>
-                        </tr>
+                        <div class="comp_vs_badge">VS</div>
 
-                        <tr>
-                            <td>Aceptacion general</td>
-                            <td>⭐⭐⭐</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
+                        <div class="comp_card comp_ecoguam">
+                            <div class="comp_ribbon">★ MEJOR OPCIÓN</div>
+                            <div class="comp_etiqueta">Con ECOGUAM</div>
+                            <img src="img/ecoguam_curtido.jpeg" alt="Cuero con curtido Ecoguam">
+                            <div class="comp_card_footer">
+                                <span class="comp_resultado comp_positivo">✓ 100% Ecológico</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    </table>
+                    <div id="comparativa">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="th_criterio">Criterio</th>
+                                    <th class="th_tradicional">Curtido Tradicional</th>
+                                    <th class="th_ecoguam">✦ Con ECOGUAM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Flexibilidad</td>
+                                    <td>⭐⭐⭐</td>
+                                    <td class="td_ecoguam">⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Resistencia a la tracción</td>
+                                    <td>⭐⭐⭐⭐</td>
+                                    <td class="td_ecoguam">⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>⭐⭐⭐</td>
+                                    <td class="td_ecoguam">⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Olor</td>
+                                    <td>⭐</td>
+                                    <td class="td_ecoguam">⭐⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Impacto Ambiental</td>
+                                    <td>⭐</td>
+                                    <td class="td_ecoguam">⭐⭐⭐⭐⭐</td>
+                                </tr>
+                                <tr>
+                                    <td>Aceptación general</td>
+                                    <td>⭐⭐⭐</td>
+                                    <td class="td_ecoguam">⭐⭐⭐⭐</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 
                 </div>
@@ -158,21 +180,42 @@
         <!-- FIN CONTENIDO-->
         
         <!-- PIE DE PAGINA-->
-         <footer>
-            <section id="contacto">
-                <h5>CONTÁCTANOS</h5>
-                <p>Síguenos en nuestras redes sociales:</p>
-                <a href="https://www.facebook.com/profile.php?id=61589362724110&sk=directory_links" target="_blank"><img src="../img/svg/facebook_icon.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/ecoguam/" target="_blank"><img src="../img/svg/instagram_icon.svg" alt="Instagram"></a>
-                <p> ecoguam para la protección del medio ambiente</p>
-            </section>
-            
+        <footer id="contacto">
+            <div class="footer_main">
+                <div class="footer_brand">
+                    <img src="logo.png" alt="Logo Ecoguam" class="footer_logo">
+                    <p class="footer_desc">Impulsando el curtido ecológico de pieles con compuestos orgánicos del guamúchil en la Región Ciénega de Chapala, Michoacán.</p>
+                </div>
+                <div class="footer_nav">
+                    <h4 class="quicksand">Navegación</h4>
+                    <ul>
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer_social">
+                    <h4 class="quicksand">CONTÁCTANOS</h4>
+                    <p>Síguenos en nuestras redes sociales:</p>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/profile.php?id=61589362724110&sk=directory_links" target="_blank" rel="noopener noreferrer"><img src="../img/svg/facebook_icon.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/ecoguam/" target="_blank" rel="noopener noreferrer"><img src="../img/svg/instagram_icon.svg" alt="Instagram"></a>
+                    </div>
+                    <p class="footer_slogan">Ecoguam para la protección del medio ambiente</p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© 2026 ECOGUAM — Todos los derechos reservados.</p>
+                <p class="footer_credits">Proyecto Inivatec · TECNM · Michoacán, México</p>
+            </div>
         </footer>
         <!-- Script para el menú hamburguesa -->
         <script>
             function toggleMenu() {
                 const menu = document.getElementById('menu');
+                const hamburger = document.getElementById('hamburger');
                 menu.classList.toggle('abierto');
+                hamburger.classList.toggle('abierto');
             }
         </script>
     </body>
